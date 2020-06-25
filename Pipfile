@@ -9,6 +9,7 @@ verify_ssl = true
 tensorflow = "==2.0.0b1"
 flask = "*"
 numpy = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
