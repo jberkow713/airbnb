@@ -2,6 +2,7 @@ import bz2
 from flask import Flask, request, jsonify
 import _pickle as cPickle
 import numpy as np
+import json
 
 
 def decompress_pickle(file):
@@ -10,6 +11,8 @@ def decompress_pickle(file):
     return model
 
 app = Flask(__name__)
+data = json.loads(x)
+data = data["data"]
 
 @app.route('/', methods=['GET', 'POST'])
 def predict():

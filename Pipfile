@@ -11,6 +11,7 @@ numpy = "*"
 gunicorn = "*"
 bz2file = "*"
 scikit-learn = "*"
+json = "*"
 
 [requires]
 python_version = "3.7"
