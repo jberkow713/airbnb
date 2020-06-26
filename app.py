@@ -10,7 +10,6 @@ def decompress_pickle(file):
     return model
 
 app = Flask(__name__)
-data = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]]
 
 @app.route('/', methods=['GET', 'POST'])
 def predict():
